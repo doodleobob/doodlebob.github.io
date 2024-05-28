@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form with Alert</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .login-card {
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .login-card .card-body {
+      padding: 2rem;
+    }
+    .login-card .card-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+      color: #343a40;
+    }
+    .login-card .form-label {
+      font-weight: 500;
+      color: #495057;
+    }
+    .login-card .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+      width: 100%;
+    }
+    .login-card .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #004085;
+    }
+    .alert {
+      margin-bottom: 1rem;
+    }
+    .back-home-btn {
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-5">
+        <!-- Alert message -->
+        <div id="alertMessage" class="alert alert-danger d-none" role="alert">
+          Incorrect username or password. Please try again.
+        </div>
+        <!-- Login form -->
+        <div class="card login-card">
+          <div class="card-body">
+            <h5 class="card-title text-center">Login</h5>
+            <form id="loginForm">
+              <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+        <a href="index.html" class="btn btn-secondary back-home-btn">Back to Home</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Login form script -->
+  <script>
+    // Add event listener to the form submission
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      // Prevent the default form submission
+      event.preventDefault();
+      // Get the values from the form
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      // Perform your login validation here
+      // For demo purposes, let's assume username is "admin" and password is "password"
+      if (username === "admin" && password === "password") {
+        // If login is successful, redirect or perform any desired action
+        window.location.href = "success.html";
+      } else {
+        // If login fails, display the alert message
+        document.getElementById("alertMessage").classList.remove("d-none");
+      }
+    });
+  </script>
+</body>
+</html>
