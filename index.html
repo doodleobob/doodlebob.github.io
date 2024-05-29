@@ -268,11 +268,35 @@
 
             <section id="skills" class="portfolio-item">
                 <h2>Skills</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
+                <div class="skills-container">
+                    <div class="skill" onclick="showSkillDetails('HTML')">
+                        <i class="fab fa-html5 skill-icon"></i>
+                        <p class="skill-name">HTML</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width: 80%;"></div>
+                        </div>
+                        <p class="skill-level">Advanced</p>
+                        <p class="skill-details" style="display: none;">HTML (Hypertext Markup Language) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+                    </div>
+                    <div class="skill" onclick="showSkillDetails('CSS')">
+                        <i class="fab fa-css3-alt skill-icon"></i>
+                        <p class="skill-name">CSS</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" style="width: 70%;"></div>
+                        </div>
+                        <p class="skill-level">Intermediate</p>
+                        <p class="skill-details" style="display: none;">CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of a document written in HTML. CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
+                    </div>
+                    <div class="skill" onclick="showSkillDetails('JavaScript')">
+                        <i class="fab fa-js-square skill-icon"></i>
+                        <p class="skill-name">JavaScript</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" style="width: 30%;"></div>
+                        </div>
+                        <p class="skill-level">Beginner</p>
+                        <p class="skill-details" style="display: none;">JavaScript is a programming language commonly used to create interactive effects within web browsers. It enables interactive web pages and is an essential part of web applications.</p>
+                    </div>
+                </div>
             </section>
 
             <section id="portfolio" class="portfolio-item">
