@@ -1,0 +1,70 @@
+:root {
+ --main-color: #512d61;
+ --hover-color: #e60505; 
+}
+
+body {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ flex-direction: column;
+}
+
+.hover-button {
+ padding: 20px 20px;
+ border: none;
+ background-color: var(--main-color);
+ color: white;
+ transition: background-color 3.0s linear; 
+}
+
+.hover-button:hover {
+ background-color: var(--hover-color);
+width: 200px;
+transition-timing-function: linear;
+}
+
+.animation-box {
+ width: 150px;
+ height: 150px;
+ background-color: var(--main-color);
+ margin-top: 40px;
+ animation: box-move 2s infinite alternate;
+}
+
+@keyframes box-move {
+ from {
+ transform: translateX(0);
+ }
+ to {
+ transform: translateX(100px);
+ }
+}
+
+
+@keyframes box-rotate {
+ from {
+ transform: rotate(0deg);
+ }
+ to {
+ transform: rotate(360deg);
+ }
+}
+
+
+.animation-box:hover {
+ animation: box-rotate 2s linear infinite;
+}
+
+
+.hover-text {
+ color: var(--main-color);
+ font-size: 30px;
+ transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.hover-text:hover {
+ color: var(--hover-color);
+ font-size: 32px;
+}

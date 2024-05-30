@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="styles3.css">
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Responsive Design Lab</title>
+ <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+ <header>
+   <nav class="responsive-nav">
+     <div class="menu-icon">&#9776;</div>
+     <a href="#">Home</a>
+     <a href="#">About</a>
+     <a href="#">Services</a>
+     <a href="#">Contact</a>
+   </nav>
+ </header>
+ <main>
+   <section class="responsive-section">
+     <article>
+       <h2>Responsive Web Design</h2>
+       <p>This section is designed to adapt to different screen sizes using media queries.</p>
+     </article>
+     <article class="additional-content">
+       <h2>Additional Content</h2>
+       <img src="your-image-url.jpg" alt="Additional Image">
+       <p>Additional information goes here.</p>
+     </article>
+   </section>
+ </main>
+ <footer>
+   <p>Responsive Design Lab ©</p>
+ </footer>
+
+ <script>
+   // JavaScript for the responsive menu toggle
+   const menuIcon = document.querySelector('.menu-icon');
+   const navLinks = document.querySelector('.responsive-nav');
+
+   menuIcon.addEventListener('click', () => {
+     navLinks.classList.toggle('show');
+   });
+ </script>
+</body>
+</html>
