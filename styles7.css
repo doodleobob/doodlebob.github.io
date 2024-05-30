@@ -1,0 +1,68 @@
+/* styles.css */
+
+/* Background and Font Styles */
+body {
+    background-color: #f8f9fa; /* Light gray background */
+    font-family: 'Roboto', sans-serif; /* Google Font Roboto */
+}
+
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(to right, #007bff, #00a5ff); /* Gradient background */
+    border-bottom: 1px solid #007bff; /* Blue border at the bottom */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+.navbar-brand {
+    color: #fff !important; /* White text color */
+    font-weight: bold; /* Bold font weight */
+}
+
+.nav-link {
+    color: #fff !important; /* White text color for links */
+    font-weight: bold; /* Bold font weight */
+}
+
+/* Button Styles */
+.btn {
+    background: linear-gradient(to right, #28a745, #218838); /* Gradient background */
+    border-color: #218838; /* Darker green border color */
+    color: #fff; /* White text color */
+    transition: all 0.3s ease; /* Smooth transition */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #218838, #1e7e34); /* Darker gradient on hover */
+    border-color: #1e7e34; /* Darker green border color on hover */
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+/* Chart Styles */
+#myChart {
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Pagination Styles */
+.pagination {
+    justify-content: center; /* Center align pagination */
+}
+
+.page-item {
+    margin: 0 5px; /* Add some space between pagination items */
+}
+
+.page-link {
+    background: linear-gradient(to right, #007bff, #00a5ff); /* Gradient background */
+    border-color: #007bff; /* Blue border color */
+    color: #fff; /* White text color */
+    transition: all 0.3s ease; /* Smooth transition */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+.page-link:hover {
+    background: linear-gradient(to right, #0056b3, #0088ff); /* Darker gradient on hover */
+    border-color: #0056b3; /* Darker blue border color on hover */
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
